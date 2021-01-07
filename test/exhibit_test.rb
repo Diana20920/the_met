@@ -9,12 +9,6 @@ class ExhibitTest < Minitest::Test
 
     assert_instance_of Exhibit, exhibit
     assert_equal "Gems and Minerals", exhibit.name
-  end
-
-  def test_the_cost
-    skip
-    exhibit = Exhibit.new({name: "Gems and Minerals", cost: 0})
-
     assert_equal 0, exhibit.cost
   end
 end
